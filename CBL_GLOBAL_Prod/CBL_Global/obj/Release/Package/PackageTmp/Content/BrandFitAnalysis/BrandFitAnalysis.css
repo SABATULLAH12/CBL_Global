@@ -1,0 +1,459 @@
+﻿.rightBody {
+background: #F3F4F8;
+width: calc(100% - 0px);
+height: calc(100% - 0px);
+float: left;
+padding-left: 5px;
+padding-right: 5px;
+box-sizing: border-box;
+}
+
+.header-selection-container {
+height: 10%;
+width: 100%;
+margin-bottom: 1%;
+background-color: #fbfcfe;
+position:relative;
+}
+.bottom-shadow-line {
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 15%;
+}
+.horizontal-shadow-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+.horizontal-shadow-content {
+    width: 100%;
+    height: 1em;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    margin-top: -1.2em;
+}
+.result-table-container {
+height: 83%;
+width: 99%;
+margin: auto;
+}
+
+.left-table-header {
+width: 10%;
+height: 15%;
+float: left;
+display: block;
+margin-bottom: 10px;
+margin-right: 3px;
+}
+
+.right-table-header {
+width: 88.5%;
+height: 15%;
+float: left;
+margin-bottom: 10px;
+overflow: hidden;
+box-shadow: -1px 1px 3px 0px grey;
+}
+
+.left-body-scroll-wrapper {
+width: 10%;
+height: 78%;
+float: left;
+display: block;
+margin-right: 3px;
+overflow: hidden;
+}
+
+.right-body-scroll-wrapper {
+width: 89.5%;
+height: 81%;
+float: left;
+display: block;
+border-bottom: 1px solid;
+border-right: 1px solid;
+border-color: lightgray;
+}
+
+.header-selection-container ul {
+list-style: none;
+margin: 0;
+padding: 0;
+WIDTH: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.header-selection-container ul li {
+display: block;
+float: left;
+margin-right: 3%;
+cursor:pointer;
+}
+
+.menu-button {
+background: url('../Images/CBL Global_sprite_V8.png') no-repeat -1125px -81px;
+height: 17px;
+width: 93%;
+}
+.inactive-menu-button {
+background: url('../Images/CBL Global_sprite_V8.png') no-repeat -1125px -81px;
+height: 17px;
+width: 93%;
+}
+.active-menu-button {
+background: url('../Images/CBL Global_sprite_V8.png') no-repeat -974px -81px;
+height: 17px;
+width: 93%;
+}
+
+.menu-button-container {
+width: 20px;
+float: left;
+}
+
+.menu-text-container {
+float: left;
+}
+
+.right-table-header ul {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+display: inline-block;
+white-space: nowrap;
+}
+
+.right-table-header ul li {
+list-style: none;
+height: 100%;
+display: inline-block;
+align-items: center;
+width: 8%;
+background-color: #fdfdfd;
+background: linear-gradient(to bottom, #fdfdfd 21%, rgba(238,238,238,1) 100%);
+position: relative;
+margin-right: 2px;
+border-bottom: 1px solid white;
+border-top: 1px solid white;
+}
+
+.table-header-name {
+height: 100%;
+display: table;
+text-align: center;
+width: 100%;
+min-height: 50px;
+}
+
+.table-header-name span {
+white-space: normal;
+display: table-cell;
+width: 100%;
+margin: auto;
+padding: 0;
+vertical-align: middle;
+font-family: Montserrat-Regular;
+font-size: 10px;
+font-weight: bold;
+}
+
+.left-table-body ul {
+width: 85%;
+margin: auto;
+padding: 0;
+height: 10%;
+min-height: 50px;
+margin-bottom: 5px;
+}
+
+.left-table-body ul li {
+list-style: none;
+display: table;
+width: 100%;
+min-width: 100px;
+position: relative;
+}
+
+.left-table-body .table-header-name {
+text-align: center;
+height: 100%;
+min-width: 104px;
+width: 100%;
+display: table;
+}
+
+.left-table-body ul li {
+list-style: none;
+width: 100%;
+min-width: 100px;
+display: inline-block;
+height: 100%;
+}
+
+.right-table-body, .left-table-body {
+height: 97%;
+}
+
+.left-table-body {
+width: 90%;
+height: 97%;
+margin: auto;
+}
+
+.right-table-body {
+width: 99%;
+overflow: auto;
+box-shadow: -1px 1px 3px 0px grey;
+}
+
+.right-table-body ul {
+width: 100%;
+margin: auto;
+padding: 0;
+display: block;
+white-space: nowrap;
+height: 10%;
+min-height: 50px;
+clear: both;
+margin-bottom:5px;
+}
+
+.right-table-body ul li {
+list-style: none;
+width: 8%;
+height: 100%;
+margin-right: 2px;
+background-color: #ffffff;
+display: inline-block;
+}
+
+.right-table-body .table-header-name {
+background-color: #ffffff;
+}
+
+.header-icon {
+background: url('../Images/CBL Global_sprite_V4.png') no-repeat -941px -86px;
+width: 7px;
+height: 12px;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+margin: auto;
+}
+
+.widget-seperator {
+position: absolute;
+margin: auto;
+top: 0;
+right: -2px;
+bottom: 0;
+width: 1px;
+height: 83%;
+}
+
+.verticle-shadow-box {
+width: 10px;
+height: 100%;
+position: relative;
+overflow: hidden;
+margin: 0em auto 0.5em;
+z-index: 2;
+}
+
+.verticle-shadow-content {
+width: 9%;
+height: 95%;
+border-radius: 50%;
+box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.1);
+position: absolute;
+margin-top: 0;
+}
+
+.right-table-body .data-value {
+height: 50%;
+display: table;
+text-align: center;
+width: 100%;
+clear: both;
+font-size: 11px;
+font-weight: bold;
+}
+
+.right-table-body .data-icon-container {
+height: 50%;
+width: 100%;
+}
+
+.right-table-body .data-icon-5w-container, .right-table-body .data-icon-search-container {
+height: 100%;
+width: 50%;
+float: left;
+cursor:pointer;
+}
+
+.right-table-body .data-icon-5w {
+background: url('../Images/CBL Global_sprite_V2.png') no-repeat -283px -1135px;
+width: 34px;
+height: 23px;
+margin: auto;
+cursor:pointer;
+}
+
+.right-table-body .data-icon-search {
+background: url('../Images/CBL Global_sprite_V2.png') no-repeat -409px -1135px;
+width: 34px;
+height: 23px;
+margin: auto;
+cursor:pointer;
+}
+
+.footer-signs {
+width: 100%;
+height: auto;
+}
+
+.footer-signs ul {
+padding: 0;
+margin: 0;
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.footer-signs ul li {
+list-style: none;
+height: 100%;
+margin-right: 5%;
+}
+
+.sign-container div {
+float: left;
+}
+
+.footer-signs .sign-icon {
+background-image: url('../Images/CBL Global_sprite_V8.png');
+margin: auto;
+background-repeat: no-repeat;
+width: 36px;
+height: 14px;
+}
+
+.footer-signs .green-sign {
+background-position: -3px -1141px;
+}
+
+.footer-signs .gray-sign {
+background-position: -73px -1141px;
+}
+
+.footer-signs .white-sign {
+background-position: -144px -1141px;
+}
+
+.footer-signs .yellow-sign {
+background-position: -215px -1141px;
+}
+
+.sign-title {
+font-size: 11px;
+}
+.right-table-body .data-value span {
+    display: table-cell;
+    vertical-align: middle;
+}
+/*.info-sign {
+    background-image: url(../Images/Icons/AA_info_ico.png);
+    background-size: 1.1vw 1.1vw;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+}*/
+/*.info-Description {
+    /*position:relative;*/
+    /*top:-2vw;*/
+    text-align:left;
+    /*border:1px solid black;*/
+}*/
+/*---Info Pop Up*/
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 11vw;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 10000000;
+  bottom: 125%;
+  left: 50%;
+  margin-left: calc(11vw/-2);
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/**/
+.tableDatanotAvailable {
+        width: 100%;
+    height: 100%;
+    text-align: center;
+    /* position: absolute; */
+    padding-top: 12%;
+    background-color: white;
+    font-weight: bold;
+    color: gray;
+}

@@ -1,0 +1,144 @@
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\roslyn\csc.exe
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\roslyn\vbc.exe
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\roslyn\VBCSCompiler.exe
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\CBL_Global.dll.config
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\CBL_Global.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\CBL_Global.pdb
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\Antlr3.Runtime.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\CBLGlobal.MODELS.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\CBLGlobalBAL.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\CBLGlobalDAL.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\Newtonsoft.Json.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\System.Web.Helpers.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\System.Web.Mvc.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\System.Web.Optimization.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\System.Web.Razor.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\System.Web.WebPages.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\WebGrease.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\CBLGlobal.MODELS.pdb
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\CBLGlobalBAL.pdb
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\CBLGlobalDAL.pdb
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\System.Web.Helpers.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\System.Web.Mvc.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\System.Web.Optimization.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\System.Web.Razor.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\System.Web.WebPages.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\Antlr3.Runtime.pdb
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\bin\Newtonsoft.Json.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\obj\Debug\CBL_Global.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\obj\Debug\CBL_Global.pdb
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBL_Global\obj\Debug\CBLGlobal.Web.csprojResolveAssemblyReference.cache
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\roslyn\csc.exe
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\roslyn\vbc.exe
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\roslyn\VBCSCompiler.exe
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\CBL_Global.dll.config
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\CBL_Global.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\CBL_Global.pdb
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\Antlr3.Runtime.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\CBLGlobal.MODELS.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\CBLGlobalBAL.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\CBLGlobalDAL.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\Newtonsoft.Json.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\System.Web.Helpers.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\System.Web.Mvc.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\System.Web.Optimization.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\System.Web.Razor.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\System.Web.WebPages.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\WebGrease.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\CBLGlobal.MODELS.pdb
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\CBLGlobalBAL.pdb
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\CBLGlobalDAL.pdb
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\System.Web.Helpers.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\System.Web.Mvc.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\System.Web.Optimization.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\System.Web.Razor.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\System.Web.WebPages.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\Antlr3.Runtime.pdb
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\bin\Newtonsoft.Json.xml
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\obj\Debug\CBLGlobal.Web.csprojResolveAssemblyReference.cache
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\obj\Debug\CBL_Global.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBL_Global\obj\Debug\CBL_Global.pdb
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\roslyn\csc.exe
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\roslyn\System.Collections.Immutable.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\roslyn\System.Reflection.Metadata.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\roslyn\vbc.exe
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\roslyn\VBCSCompiler.exe
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\roslyn\VBCSCompiler.exe.config
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\CBL_Global.dll.config
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\CBL_Global.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\CBL_Global.pdb
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\Antlr3.Runtime.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\CBLGlobal.MODELS.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\CBLGlobalBAL.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\CBLGlobalDAL.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\Microsoft.Web.Infrastructure.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\Newtonsoft.Json.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\System.Web.Helpers.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\System.Web.Mvc.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\System.Web.Optimization.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\System.Web.Razor.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\System.Web.WebPages.Deployment.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\System.Web.WebPages.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\System.Web.WebPages.Razor.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\WebGrease.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\CBLGlobal.MODELS.pdb
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\CBLGlobalBAL.pdb
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\CBLGlobalDAL.pdb
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\System.Web.Helpers.xml
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\System.Web.Mvc.xml
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\System.Web.Optimization.xml
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\System.Web.Razor.xml
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\System.Web.WebPages.xml
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\System.Web.WebPages.Deployment.xml
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\System.Web.WebPages.Razor.xml
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\Antlr3.Runtime.pdb
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\bin\Newtonsoft.Json.xml
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\obj\Debug\CBLGlobal.Web.csprojResolveAssemblyReference.cache
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\obj\Debug\CBL_Global.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBL_Global\obj\Debug\CBL_Global.pdb

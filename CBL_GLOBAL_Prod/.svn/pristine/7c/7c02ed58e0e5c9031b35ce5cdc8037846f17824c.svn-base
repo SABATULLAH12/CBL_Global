@@ -1,0 +1,199 @@
+﻿
+@{
+    ViewBag.Title = "DeepDive";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/D3/d3.v3.min.js"></script>
+<script src="~/Scripts/BrandFitAnalysis/DeepDive.js"></script>
+<link href="~/Content/BrandFitAnalysis/DeepDive.css" rel="stylesheet" />
+<div class="leftBody" ng-controller="leftPanelCtrl">
+    @Html.Partial("_PartialLeftPanel")
+</div>
+<div ng-controller="rightPanelCtrl" class="rightBody">
+    <div class="header-selection-container" style="height: 12%;">
+        <ul ng-repeat="data in Brand">
+            <li class="header-sub-title-container" style="width:13%;">
+                <div class="table-header-name" style="width: 100%;">
+                    <span class="ng-binding brand-name">BRAND\CATEGORY - {{data}}</span>
+                </div>
+                <div class="header-icon"></div>
+            </li>
+            <li class="header-sub-title-container" style="width:30%;">
+                <div class="table-header-name" style="width: 100%;" ng-repeat="data in DM">
+                    <span class="ng-binding dM-Name"  style="display: contents;">DRINKING MOMENT - {{data}}</span>
+                </div>
+                <div class="header-icon"></div>
+            </li>
+            <li class="header-sub-title-container" style="width:12%;">
+                <div class="table-header-name" style="width: 100%;" ng-repeat="data in DM">
+                    <span class="strategy-name">Strategy - {{setStrategyName()}}</span>
+                </div>
+                <div class="header-icon"></div>
+            </li>
+            <li class="header-sub-title-container" style="width:21%;">
+                <div class="table-header-name">
+                    <span class="ng-binding">VOL CONTRIBUTION TO {{data}}</span>
+                </div>
+                <div class="chart-container Volume">
+                    <span class="chart-data"></span>
+                    @*<svg viewBox="0 0 36 36">
+                        <path d="M18 2.0845
+      a 15.9155 15.9155 0 0 1 0 31.831
+      a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#c11b2f" stroke-width="4" stroke-dasharray="48, 100"></path>
+                    </svg>*@
+                </div>
+                <div class="widget-seperator">
+                    <div class="verticle-shadow-box">
+                        <div class="verticle-shadow-content"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="header-sub-title-container" style="width:15%;">
+                <div class="table-header-name" style="width: 70%;">
+                    <span class="ng-binding">SHARE OF {{data}}</span>
+                </div>
+                <div class="chart-container Share">
+                    <span class="chart-data"></span>
+                    @*<svg viewBox="0 0 36 36">
+                        <path d="M18 2.0845
+      a 15.9155 15.9155 0 0 1 0 31.831
+      a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#c11b2f" stroke-width="4" stroke-dasharray="25, 100"></path>
+                    </svg>*@
+                </div>
+                <div class="widget-seperator">
+                    <div class="verticle-shadow-box">
+                        <div class="verticle-shadow-content"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="header-sub-title-container" style="width:14%;">
+                <div class="table-header-name" style="width: 60%;">
+                    <span class="ng-binding">FIT OF {{data}}</span>
+                </div>
+                <div class="chart-container Fit">
+                    <span class="chart-data"></span>
+                    @*<svg viewBox="0 0 36 36">
+                        <path d="M18 2.0845
+      a 15.9155 15.9155 0 0 1 0 31.831
+      a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#c11b2f" stroke-width="4" stroke-dasharray="10, 100"></path>
+                    </svg>*@
+                </div>
+                <div class="widget-seperator">
+                    <div class="verticle-shadow-box">
+                        <div class="verticle-shadow-content"></div>
+                    </div>
+                </div>
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="bottom-shadow-line">
+            <div class="horizontal-shadow-box">
+                <div class="horizontal-shadow-content"></div>
+            </div>
+        </div>
+    </div>
+    <div class="header-selection-container">
+        <div class="title-container">
+            <div class="title-wraper">
+                <span></span>
+            </div>
+        </div>
+        <div id="back-button" class="back-button-container" onclick="RedirectToBrandFit('@Url.Action("Index", "brandFitAnalysis", new {frmFW = "1"})')">
+        </div>
+        <div class="bottom-shadow-line">
+            <div class="horizontal-shadow-box">
+                <div class="horizontal-shadow-content"></div>
+            </div>
+        </div>
+    </div>
+    <div class="widget-container">
+        <div class="widget" ng-repeat="data in CategoryBrandList">
+            <div class="widget-wraper">
+                <div class="widget-title-container">
+                    <div class="widget-title-wraper">
+                        <span>{{data.RFD}}</span>
+                    </div>
+                </div>
+                <div class="competing-container" ng-if="data.IsLowSample!=1">
+                    <div class="competing-title">
+                        <span>TOP</br> CATEGORY</span>
+                    </div>
+                    <div class="competing-title">
+                        <span>TOP</br> BRANDS</span>
+                        <div class="widget-seperator">
+                            <div class="verticle-shadow-box">
+                                <div class="verticle-shadow-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-data-container" ng-if="data.IsLowSample!=1">
+                    <div class="data-container">
+                        <div class="data-row-brandFit" ng-repeat="j in data.BrandsList">
+                            <div class="icon-container">
+                                <img src="~/Content/Images/Icons/Category/{{setCategoryIcon(j.Category)}}.png" style="width:15px; height:20px;" />
+                            </div>
+
+                            <div class="volume-container">
+                                <span class="data-volume" ng-if="j.Volume!='NA'">{{j.Category}}({{setValue(j.Volume)}}%)</span>
+                                <span class="data-volume" ng-if="j.Volume=='NA'">{{j.Category}}({{j.Volume}})</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="data-container">
+                        <div class="data-row-brandFit" ng-repeat="j in data.BrandsList">
+                            <span class="brand-data-lebel">{{j.Brand}}</span>
+                        </div>
+                        <div class="widget-seperator">
+                            <div class="verticle-shadow-box">
+                                <div class="verticle-shadow-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div ng-if="data.IsLowSample==1" class="LowSample">Low Sample Size</div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-selection-container">
+        <div class="table-header-name ">
+            <span class="bottom-title" style="text-transform:uppercase;"></span>
+        </div>
+        <div class="header-icon"></div>
+        <div class="right-bottom-container">
+            <ul>
+                <li>
+                    <div class="icon-overlapping-benefits">
+                    </div>
+                </li>
+                <li>
+                    <div class="overlapping-benefits-text">
+                        <span>OVERLAPPING BENIFITS</span>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+
+    <div class="bottom-data-results">
+        <div class="bottom-data-cell" ng-repeat="i in RFDList">
+            <div class="data-cell-wraper">
+                <span>{{i.ReasonForDrinking}}</span>
+            </div>
+            <div ng-if="i.OverlappingBenefits==1" class="data-sign-container">
+                <div class="data-sign">
+                </div>
+            </div>
+            <div ng-if="$index > 0 " class="widget-seperator">
+                <div class="verticle-shadow-box">
+                    <div class="verticle-shadow-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

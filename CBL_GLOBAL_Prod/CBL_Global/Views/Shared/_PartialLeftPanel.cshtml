@@ -1,0 +1,59 @@
+﻿<link href="~/Content/CBL/LeftPanelFilters.css" rel="stylesheet" />
+<script src="~/Scripts/CBL/LeftPanelFilters.js"></script>
+<div class="filter-menu inactive-menu" ng-repeat="filter in leftPanelFilters" data-name="{{filter.Label}}">
+    <div class="filter-header">
+        <ul>
+            <li>
+                <span class="filter-header-title inactive-menu-title">{{filter.Label | uppercase}}</span>
+                <span ng-if="filter.Label=='ADDITIONAL FILTERS' || (filter.Label | uppercase) =='ADVANCED FILTERS' || ((filter.Label| uppercase)=='DRINKING MOMENTS' && $index=='5')" class="filter-optional-title inactive-filter-optional-title">(Optional)</span>
+            </li>
+            <li>
+                <span class="selected-filter" id="{{filter.Label}}-text">None</span>
+            </li>
+        </ul>
+    </div>
+    <div class="filter-arrow">
+        <div class="arrow inactive-arrow"></div>
+    </div>
+    <div class="filter-data-popup" filter-data-type="{{filter.Label}}" total-level-count="{{filter.PanelPopup.length}}"  on-finish-render="appendClearAll">
+        <div class="Search-Filter" ng-if="filter.HasSearchBox">
+            <div class="Search">
+                <input type="text" id="search" class="txt-search" name="Search-Content" placeholder="Search" />
+                <div class="img-search"></div>
+            </div>
+        </div>
+        <div class="filter-level" ng-repeat="panel in filter.PanelPopup" level-id="{{panel.Level}}">
+
+    @*<div class="filter-data-popup" filter-data-type="{{filter.Label}}" total-level-count="{{filter.PanelPopup.length}}" >
+        <div class="filter-level" ng-repeat="panel in filter.PanelPopup" level-id="{{panel.Level}}" >*@
+
+            <ul>
+                <li class="data-row" style="position:relative" ng-repeat="data in panel.Data" button-type="{{data.ButtonType}}" filter-data-type="{{filter.Label}}" parent-filter-name="{{data.ParentText}}" filter-text="{{data.Text}}" market-name="{{data.Market}}" wave="{{data.Wave}}">
+                    @*for filter menu*@
+                    <div class="filter-header" ng-if="!data.IsSelectable">
+                        <span class="data-label">{{data.Text}}</span>
+                    </div>
+                    <div class="filter-arrow" ng-if="!data.IsSelectable">
+                        <div class="arrow inactive-arrow"></div>
+                    </div>
+                    @*end filter menu*@
+
+                    @*for button*@
+                    <div class="filter-button" market-name="{{data.Market}}" wave="{{data.Wave}}" ng-if="data.IsSelectable">
+                        <div class="inactive-{{data.ButtonType}}" button-type="{{data.ButtonType}}" data-id="{{data.ID}}" data-text="{{data.Text}}" parent-text="{{data.ParentText}}">
+                        </div>
+                    </div>
+                    <div class="data-name" ng-if="data.IsSelectable">
+                        <span class="data-label">{{data.Text}}</span>
+                    </div>
+                    @*end button*@    
+                    <div class="ClearAllItem" ng-if="$last && panel.Level ==1 "/>
+                </li>    
+            </ul>
+        </div>
+    </div>
+</div>
+
+@*submit container block*@
+<div class="submitDiv" ng-controller="onSubmitCtrl" ng-click="getOnSubmitData()">SUBMIT</div>
+<div class="ClearAllM" style="margin-top:0.5vw" onclick="clearAll()">Clear All</div>

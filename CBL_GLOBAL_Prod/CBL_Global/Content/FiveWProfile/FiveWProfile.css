@@ -1,0 +1,665 @@
+﻿.rightBody {
+background: #E4E3E6;
+}
+
+@font-face {
+font-family: 'Montserrat-Regular';
+src: url('../../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Montserrat-Light';
+src: url('../../fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+.top-widgets{
+height:49%;
+}
+
+.bottom-widgets{
+    height:49%;
+}
+
+.widget-container{
+    background : rgba(255, 255, 255, 0.85);
+  min-height : 225px;
+      height: calc(100% - 26px);
+  border-radius : 0px 0px 4px 4px;
+  box-shadow : 1px 3px 5px rgba(0, 0, 0, 0.2);
+  border-top : 1px Solid rgba(206, 50, 50, 0.5);
+}
+
+.left-widget{
+        width: 46%;
+    display: inline-block;
+    /* margin: 14px; */
+    margin-left: 12px;
+    margin-top: 17px;
+     position: relative; 
+    margin-right: 5px;
+}
+
+.middle-widget, .right-widget{
+       width: 25%;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    position:relative;
+}
+
+.widget-head{
+       background: url('../Images/CBL Global_sprite_V5.png') no-repeat -5px -309px;
+    width: 133px;
+    height: 37px;
+    position: absolute;
+    top: -20px;
+    font-family: Montserrat-Medium;
+    font-size: 12px;
+    /* text-align: center; */
+    text-transform: uppercase;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#brand-container{
+    background: #FFFFFF;
+    width: 141px;
+    height: 47px;
+    border-radius: 0px 0px 3px 3px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.24);
+    font-family: Montserrat-Medium;
+    font-size: 11px;
+    color: #000000;
+    position: absolute;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 20px;
+    top: -17px;
+    text-align: center;
+    border: 1px solid lightgrey;
+}
+
+.what-sub-div{
+    width:20%;
+    height:100%;
+    float:left
+}
+.widget-body{
+     width: 92%;
+      font-family: Montserrat-Regular;
+    font-size: 11px;
+    color: #000000;
+     margin: 4%;
+      margin-top: 9%;
+      height:91%;
+}
+
+.widget-header{
+    text-transform: uppercase;
+    height: 9%;
+    width:100% ;  
+    border-bottom-style: Solid;
+    border-color: rgba(82, 82, 82, 0.5);
+    border-width: 1px;
+    float: left;
+    display: flex;
+    align-items: center;
+    position:relative;
+    
+}
+
+.red-border-div{
+      background : #CF1B25;
+  width : 10px;
+  height : 2px;
+  position:absolute;
+  top:100%;
+}
+
+.left-sub-widget, .middle-sub-widget, .right-sub-widget{
+    float:left;
+    height:100%;
+    width:32%;
+}
+
+.vertical-separator{
+   	background: url('../Images/CBL Global_sprite_V6.png') no-repeat -722px -941px;
+	width: 10px;
+	height: 224px;
+    float:left;
+}
+
+.widget-content{
+    width:100%;
+    height:91%;
+    float:left;
+}
+
+.widget-sub-content{
+    height:calc(100% / 6 - 4px);
+    float:left;
+    width:100%;
+    margin-top:2%;
+}
+.widget-title{
+    height:50%;
+    float:left;
+    width:70%;
+    font-family:Montserrat-Light;
+    display:flex;
+    align-items:center;
+    font-size:9px;
+}
+
+.widget-title span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.household-widget-title{
+     height:100%;
+    float:left;
+    font-family:Montserrat-Light;
+    display:flex;
+    align-items:center;
+    font-size:9px;
+    width:37%;
+}
+
+.time-widget-title{
+     height:100%;
+    float:left;
+    font-family:Montserrat-Light;
+    display:flex;
+    align-items:center;
+    font-size:9px;
+    width:20%;
+}
+
+.mc-widget-title{
+     height:100%;
+    float:left;
+    font-family:Montserrat-Light;
+    display:flex;
+    align-items:center;
+    font-size:9px;
+    width:39%;
+    margin-left:2%;
+}
+
+.mc-left-div{
+    height:100%;
+    width:3px;
+    float:left;
+}
+
+.mc-color-1{
+     background : linear-gradient(90deg, rgba(222, 74, 74, 1) 0%, rgba(244, 113, 113, 1) 100%);
+     background-color:crimson;
+}
+
+.mc-color-2{
+     background : linear-gradient(90deg, rgba(255, 172, 51, 1) 0%, rgba(255, 200, 120, 1) 100%);
+     background-color:orange;
+}
+
+.mc-color-3{
+      background : #A56061;
+}
+.mc-color-4{
+     background : #F07197;
+}
+.mc-color-5{
+       background : #EFC2E6;
+}
+
+.household-separator-container{
+   height:100%;
+    float:left;
+    display:flex;
+    align-items:center;
+    margin-left:2%;
+    width:25%;
+}
+
+.time-separator-container{
+height:100%;
+    float:left;
+    display:flex;
+    align-items:center;
+    width:30%;
+    width:55%;
+    justify-content:center;
+}
+.time-separator-container > span{
+    background: url('../Images/CBL Global_sprite_V7.png') no-repeat -456px -621px;
+	width: 94px;
+	height: 5px;
+}
+
+.household-separator-container > span{
+      background: url('../Images/CBL Global_sprite_V7.png') no-repeat -506px -621px;	
+    width: 52px;
+    height: 5px;
+}
+.widget-sub-title{
+    width:100%;
+    height:50%;
+    float:left;
+}
+
+.widget-chart-container{
+    width:65%;
+    float:left;
+    height:100%;
+    display:flex;
+    align-items:center;
+}
+
+.percentage-container{
+    width:35%;
+    float:right;
+    height:100%;
+    text-align:end;
+    display:flex;
+    align-items:center;
+}
+
+.percentage{
+    width:48%;
+    float:left;
+    font-family:Montserrat-Medium;
+    font-size:9px;
+}
+
+.value{
+     width:41%;
+    float:left;
+    font-family:Montserrat-Light;
+    font-size:9px;
+    text-align:center;
+}
+.separator{
+    float:left;
+    width:11%;
+     font-family:Montserrat-Medium;
+     font-size:9px;
+}
+
+.where-parent-chart{
+    float:left;
+    width:90%;
+    background-color:rgba(200,200,200,0.3);
+    height:45%;
+    display:flex;
+    align-items:center;
+}
+
+.where-child-chart{
+     background : linear-gradient(90deg, rgba(222, 74, 74, 1) 0%, rgba(244, 113, 113, 1) 100%);
+     height:62%;
+     background-color:crimson;
+    
+}
+
+.widget-chart-left{
+    float:left;
+        background: url('../Images/CBL Global_sprite_V6.png') no-repeat -779px -993px;
+    width: 4px;
+    height: 12px;
+}
+
+.widget-anchor{
+    float:left;
+    background-size:100% 100%;
+}
+
+.why-anchor{
+    background: url('../Images/CBL Global_sprite_V5.png') no-repeat -211px -387px;
+	width: 13px;
+	height: 13px;
+}
+
+.widget-chart{
+    height:40%;
+   background:linear-gradient(-90deg, rgba(232, 232, 232, 0.05) 0%, rgba(35, 31, 32, 0.1) 100%);
+    float:left;
+    background-color:rgba(200,200,200,0.3);
+}
+
+.who-middle-anchor{
+    background: url('../Images/CBL Global_sprite_V5.png') no-repeat -107px -387px;
+	width: 14px;
+    height: 13px;
+}
+
+.who-right-anchor{
+    background: url('../Images/CBL Global_sprite_V5.png') no-repeat -159px -387px;
+	width: 14px;
+    height: 13px;
+}
+
+.widget-parent-chart{
+    height:100%;
+    width:95%;
+    display:flex;
+    align-items:center;
+}
+
+.gender-div{
+  float:left;
+    width:50%;
+    height:100%; 
+}
+
+ .away-from-home-div{
+      float:left;
+    width:50%;
+    height:50%; 
+ }
+
+.gender-text, .away-from-home-text {
+    display:flex;
+    justify-content:center;
+    width:100%;
+    height:26%;
+    font-family:Montserrat-Light;
+    text-align:center;
+}
+.away-from-home-text{
+    font-size:9px;
+}
+
+.where-text{
+ display:flex;
+    justify-content:center;
+    width:98%;
+    height:40%;
+    align-items:center;
+    font-family:Montserrat-Light;
+    font-size:11px;
+    text-align:center;
+}
+
+.image-Male{
+    background: url('../Images/CBL Global_sprite_V5.png') no-repeat 0 -387px;
+	width: 24px;
+	height: 34px;
+}
+
+.image-Female{
+    background: url('../Images/CBL Global_sprite_V5.png') no-repeat -53px -387px;
+	width: 25px;
+	height: 34px;
+}
+
+.yellow-bottom-image{
+    background: url('../Images/CBL Global_sprite_V5.png') no-repeat -560px -304px;
+	width: 69px;
+	height: 11px;
+}
+
+.red-bottom-image{
+    background: url('../Images/CBL Global_sprite_V5.png') no-repeat -462px -304px;
+	width: 69px;
+	height: 11px;   
+}
+
+.grey-bottom-image{
+   background: url('../Images/CBL Global_sprite_V6.png') no-repeat -659px -304px;
+	width: 68px;
+	height: 11px;  
+}
+
+.gender-image-container{
+    width:100%;
+    height:40%;
+}
+
+.flex{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.when-chart-container{
+    float:left;
+        width: 30%;
+    height: 38%;
+    margin-top:3%;
+    position:relative;
+}
+.when-chart-container svg {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        height: 81px;
+        width: 93px;
+    }
+
+#chart svg{
+      position: absolute;
+        margin: auto;
+      left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 93px;
+    width: 171px;
+}
+
+.when-arc-image{
+    position:absolute;
+   background: url('../Images/CBL Global_sprite_V6.png') no-repeat -296px -387px;
+	width: 22px;
+	height: 22px;
+        top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.when-percentage-container{
+    width:33%;
+    height:36%;
+    float:left;
+     margin-top:4%;
+}
+
+.AFH-image {
+    /*background: url('../Images/CBL Global_sprite_V6.png') no-repeat 0 -450px;*/
+    width: 28px;
+    height: 24px;
+  
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+.what-percentage-div{
+    width:100%;
+    height:27%; 
+}
+
+.what-percentage{
+  font-family : Montserrat-Medium;
+  font-size : 11px; 
+  color : #000000;
+  float:left;
+  width:100%;
+  height:56%;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+}
+
+.what-change{
+   font-family : Montserrat-Light;
+  font-size : 10px;
+  color : #000000;
+   float:left;
+   width:100%;
+   height:30%;
+    display:flex;
+  align-items:baseline;
+  justify-content:center;
+}
+
+.what-separator{
+     float:left;
+     width:100%;
+     height:14%;
+       display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.what-separator-image{
+     background: url('../Images/CBL Global_sprite_V6.png') no-repeat -758px -304px;
+	width: 45px;
+	height: 9px;
+}
+
+.what-chart-div{
+    width:100%;
+    height:57%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-chart-sub-div{
+    width: 36px;
+    height: 117px;
+}
+
+.where-arc-chart{
+        height: 45%;
+   position:relative;
+    width: 52%;
+    margin-left: 24%;
+    margin-top: 10%;
+}
+
+.where-arc-image{
+    position:absolute;
+    background: url('../Images/CBL Global_sprite_V6.png') no-repeat -347px -387px;
+	width: 32px;
+	height: 32px;
+        top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.where-percentage-container{
+    width:50%;
+    height:40%;
+    float:left;
+    margin-top:5%;
+}
+
+.what-parent-chart{
+    background : #C8C8C8;
+  width : 7px;
+  height : 7px;
+margin: 1px;
+float: right;
+border-radius:5px;
+}
+
+.what-child-chart{
+    height: 100%;
+background : linear-gradient(0deg, rgba(255, 172, 51, 1) 0%, rgba(255, 200, 120, 1) 100%);
+width: 0%;
+border-radius:5px;
+background-color:rgb(255, 165, 0);
+}
+
+.what-text{
+    width:100%;
+    height:16%;
+     font-family : Montserrat-Light;
+  font-size : 9px;
+  color : #000000;
+  text-align:center;
+}
+
+.horizontal-separator{
+    background: url('../Images/CBL Global_sprite_V6.png') no-repeat -770px -941px;
+	width: 274px;
+	height: 8px;
+    float:left;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+
+.green-index {
+color: green;
+}
+
+.red-index {
+color: red;
+}
+
+.when_1{
+    float:right;
+}
+
+#chart{
+    float: left;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-left: 22%;
+   
+    position: relative;
+    height: 45%;
+    width: 55%;
+
+}
+
+.NoDataAvailable{
+        float: left;
+    width: 100%;
+    height: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+        color: #333333;
+    font-family: Montserrat-Regular;
+    text-align:center;
+}
+.where-arc-chart svg {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 106px;
+    width: 100px;
+}
+.dot-three-line{
+        display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 8vh;
+    /*height:8vh;*/
+}

@@ -1,0 +1,396 @@
+﻿
+@{
+    ViewBag.Title = "CBL GLOBAL PORTAL";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/D3/d3.v3.min.js"></script>
+@*<link href="~/Content/FiveWProfile/FiveWProfile.css?v=2" rel="stylesheet" />*@
+@Styles.Render("~/Content/FWStyles")
+@Scripts.Render("~/bundles/FW")
+@*<script src="~/Scripts/FiveWProfile/FiveWProfile.js?v=2"></script>*@
+<div class="leftBody" ng-controller="leftPanelCtrl">
+    @Html.Partial("_PartialLeftPanel")
+</div>
+
+<div class="rightBody" ng-controller="rightPanelCtrl" style="display:none">
+    <div class="top-widgets">
+        <div class="widget-container left-widget" id="who-widget">
+            <div id="brand-container"></div>
+            <div class="widget-head" style="left: 39%;">WHO</div> 
+            <div class="left-sub-widget">
+                <div class="widget-body" style="height: 82%;margin-top: 18%;">
+                    <div class="widget-header">
+                        GENDER
+                        <div class="red-border-div"></div>
+                    </div>
+                    <div class="widget-content" style="height:50%" id="gender-widget">  
+                        <div class="gender-div" ng-repeat="data in genderArray">
+                            <div class="gender-image-container flex" style="margin-top:5%" >
+                                <div class="image-{{data.AttributeName}}"></div>
+                            </div>
+                            <div class="flex" style="width:100%;height:20%;">
+                                <div class="percentage-container" style="width:59%;float:left">
+                                    <div class="percentage" ng-if="data.Volume=='NA'">
+                                        <span>{{data.Volume}}</span>
+                                       
+                                    </div>
+                                    <div class="percentage {{setIndexColor(data.Index)}}" ng-if="data.Volume!='NA'">
+                                        
+                                        <span>{{setValue(data.Volume)}}%</span>
+                                    </div>
+                                    <div class="separator"><span>|</span></div>
+                                    <div class="value"><span>{{setIndex(setValue(data.Index))}}</span></div>
+                                </div>
+                            </div>
+                            <div class="flex" style="width:100%;height:10%;float:left">
+                                <div class="{{setSeparatorColor($index)}}"></div>
+                            </div>
+                            <div class="gender-text">{{data.AttributeName}}</div>
+                        </div> 
+                        <div class="NoDataAvailable" style="display:none">No Data Available</div>
+                       
+                    </div>
+                    <div class="widget-header">TOP 3 HOUSEHOLD SIZE <div class="red-border-div"></div>
+                    </div>
+                    <div class="widget-content" style="height:30%" id="household-widget">
+                        <div class="widget-sub-content" style="height:29%" ng-repeat="data in householdArray">
+                            <div class="household-widget-title"><span>{{data.AttributeName}}</span></div>     
+                            <div class="household-separator-container">
+                                <span></span>
+                            </div>    
+                            <div class="percentage-container">
+                                    <div class="percentage" ng-if="data.Volume=='NA'">
+                                        <span>{{data.Volume}}</span>
+
+                                    </div>
+                                    <div class="percentage {{setIndexColor(data.Index)}}" ng-if="data.Volume!='NA'">
+
+                                        <span>{{setValue(data.Volume)}}%</span>
+                                    </div>
+                                    <div class="separator"><span>|</span></div>
+                                    <div class="value"><span>{{setIndex(setValue(data.Index))}}</span></div>
+                                </div>
+                        </div>
+                        <div class="NoDataAvailable" style="display:none">No Data Available</div>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="vertical-separator"></div>
+            <div class="middle-sub-widget">
+                <div class="widget-body">
+                    <div class="widget-header">AGE GROUP
+                        <div class="red-border-div"></div>
+                    </div>
+                    <div class="widget-content" id="agegroup-widget">
+                        <div class="widget-sub-content" ng-repeat="data in ageGroupArray">
+                            <div class="widget-title" title="{{data.AttributeName}}"><span>{{data.AttributeName}}</span></div>
+                            <div class="widget-sub-title">
+                                <div class="widget-chart-container">
+                                    <div class="widget-chart-left"></div>
+                                    <div class="widget-parent-chart">
+                                        <div class="widget-chart" style="width:{{setWidth(setValue(data.Volume, 'Age Group'))}}"></div>
+                                        <div class="widget-anchor who-middle-anchor"></div>
+                                    </div>
+                                    </div>
+                                <div class="percentage-container">
+                                    <div class="percentage" ng-if="data.Volume=='NA'">
+                                        <span>{{data.Volume}}</span>
+
+                                    </div>
+                                    <div class="percentage {{setIndexColor(data.Index)}}" ng-if="data.Volume!='NA'">
+
+                                        <span>{{setValue(data.Volume)}}%</span>
+                                    </div>
+                                    <div class="separator"><span>|</span></div>
+                                    <div class="value"><span>{{setIndex(setValue(data.Index))}}</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="NoDataAvailable" style="display:none">No Data Available</div>
+                    </div>
+                </div>
+            </div>
+            <div class="vertical-separator"></div>
+            <div class="right-sub-widget">
+                <div class="widget-body">
+                    <div class="widget-header">OCCUPATION
+                        <div class="red-border-div"></div>
+                    </div>
+                    <div class="widget-content" id="occupation-widget">
+                        <div class="widget-sub-content" ng-repeat="data in occupationArray">
+                            <div class="widget-title" title="{{data.AttributeName}}"><span>{{data.AttributeName}}</span></div>
+                            <div class="widget-sub-title">
+                                <div class="widget-chart-container">
+                                    <div class="widget-chart-left"></div>
+                                    <div class="widget-parent-chart">
+                                        <div class="widget-chart" style="width:{{setWidth(setValue(data.Volume, 'Occupation'))}}"></div>
+                                        <div class="widget-anchor who-right-anchor"></div>
+                                    </div>
+                                </div>
+                                <div class="percentage-container">
+                                    <div class="percentage" ng-if="data.Volume=='NA'">
+                                        <span>{{data.Volume}}</span>
+
+                                    </div>
+                                    <div class="percentage {{setIndexColor(data.Index)}}" ng-if="data.Volume!='NA'">
+
+                                        <span>{{setValue(data.Volume)}}%</span>
+                                    </div>
+                                    <div class="separator"><span>|</span></div>
+                                    <div class="value"><span>{{setIndex(setValue(data.Index))}}</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="NoDataAvailable" style="display:none">No Data Available</div>
+                    </div>
+
+                </div>
+            </div>      
+        </div>
+        <div class="widget-container middle-widget" id="when-widget" >
+            <div class="widget-head" style="left: 32%;" >WHEN</div> 
+            <div class="widget-body" style="margin-top:5%">
+                <div class="when-percentage-container when_{{$index}}" ng-repeat="data in whenWidget" widget-data-value="{{data.Volume}}">
+                    <div class="flex" style="width:100%;height:40%;">
+                        <div class="percentage-container" style="width:59%;float:left">
+                            <div class="percentage" ng-if="data.Volume=='NA'">
+                                <span>{{data.Volume}}</span>
+
+                            </div>
+                            <div class="percentage {{setIndexColor(data.Index)}}" ng-if="data.Volume!='NA'">
+
+                                <span>{{setValue(data.Volume)}}%</span>
+                            </div>
+                            <div class="separator"><span>|</span></div>
+                            <div class="value"><span>{{setIndex(setValue(data.Index))}}</span></div>
+                        </div>
+                    </div>
+                    <div class="flex" style="width:100%;height:10%;float:left">
+                        <div class="{{setSeparatorColor($index)}}"></div>
+                    </div>
+                    <div class="where-text">{{(data.AttributeName)}}</div>
+                </div>
+                <div class="when-chart-container">
+
+                </div>
+
+                <div class="horizontal-separator"></div>
+                <div class="widget-content" style="height:49%" id="time-widget">
+                    <div class="widget-sub-content" style="height:calc(100% / 5  - 2px); margin-top:1%" ng-repeat="data in timeWidget">
+                        <div class="time-widget-title"><span>{{data.AttributeName}}</span></div>
+                        <div class="time-separator-container">
+                            <span></span>
+                        </div>
+                        <div class="percentage-container" style="width:23%">
+                            <div class="percentage" ng-if="data.Volume=='NA'">
+                                <span>{{data.Volume}}</span>
+
+                            </div>
+                            <div class="percentage {{setIndexColor(data.Index)}}" ng-if="data.Volume!='NA'">
+
+                                <span>{{setValue(data.Volume)}}%</span>
+                            </div>
+                            <div class="separator"><span>|</span></div>
+                            <div class="value"><span>{{setIndex(setValue(data.Index))}}</span></div>
+                        </div>
+                    </div>
+                    <div class="NoDataAvailable" style="display:none;font-size:18px">DayPart Data Not Available</div>
+                </div>
+            </div>
+
+           
+        </div>
+        <div class="widget-container right-widget" id="M-CWidget" >
+            <div class="widget-head" style="left: 32%;">Moments</div> 
+            <div class="widget-body" style="margin-top:5%">
+                <div id="chart"></div>
+                <div class="horizontal-separator" style="margin-top:0%"></div>
+                <div class="widget-content" style="height:49%" id="mc-widget">
+                    <div class="widget-sub-content mc-widget-container" style="height:calc(100% / 5  - 2px); margin-top:1%" ng-repeat="data in momentsCategoryWidget" widget-data-value="{{data.Volume}}">
+                        <div class="mc-left-div mc-color-{{$index+1}}" ></div>
+                        <div class="mc-widget-title"><span>{{data.AttributeName}}</span></div>
+                        <div class="time-separator-container" style="width:35%">
+                            <span></span>
+                        </div>
+                        <div class="percentage-container" style="width:23%">
+                            <div class="percentage" ng-if="data.Volume=='NA'">
+                                <span>{{data.Volume}}</span>
+
+                            </div>
+                            <div class="percentage {{setIndexColor(data.Index)}}" ng-if="data.Volume!='NA'">
+
+                                <span>{{setValue(data.Volume)}}%</span>
+                            </div>
+                            <div class="separator"><span>|</span></div>
+                            <div class="value"><span>{{setIndex(setValue(data.Index))}}</span></div>
+                        </div>
+                    </div>
+                    <div class="NoDataAvailable" style="display:none;font-size:18px">No Data Available</div> 
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="bottom-widgets">
+        <div class="widget-container left-widget" id="where-widget">
+            <div class="widget-head" style="left: 39%;">WHERE</div> 
+            <div class="left-sub-widget" id="where-left-widget">
+                <div class="where-arc-chart">
+                           
+                </div>
+                <div class="where-percentage-container" ng-repeat="data in whereLeftWidget" widget-data-value="{{data.Volume}}">
+                    <div class="flex" style="width:100%;height:40%;">
+                        <div class="percentage-container" style="width:66%;float:left">
+                            <div class="percentage" ng-if="data.Volume=='NA'">
+                                <span>{{data.Volume}}</span>
+
+                            </div>
+                            <div class="percentage {{setIndexColor(data.Index)}}" ng-if="data.Volume!='NA'">
+
+                                <span>{{setValue(data.Volume)}}%</span>
+                            </div>
+                            <div class="separator"><span>|</span></div>
+                            <div class="value"><span>{{setIndex(setValue(data.Index))}}</span></div>
+                        </div>
+                    </div>
+                    <div class="flex" style="width:100%;height:10%;float:left">
+                        <div class="{{setSeparatorColor($index)}}"></div>
+                    </div>
+                    <div class="where-text">{{data.AttributeName}}</div>
+                </div>
+                <div class="NoDataAvailable" style="display:none">Home/Away From Home No Data Available</div>
+              
+            </div>
+            <div class="vertical-separator"></div>
+            <div class="middle-sub-widget">
+                <div class="widget-body">
+                    <div class="widget-header">TOP 4 AWAY FROM HOME
+                        <div class="red-border-div"></div>
+                    </div>
+                    <div class="widget-content" style="height:90%" id="away-fromhome-widget">
+                        <div class="away-from-home-div" ng-repeat="data in whereWidget">
+                            <div class="gender-image-container flex">
+                               
+                                <img class="AFH-image" src="~/Content/Images/Icons/Location/{{setCategoryIcon(data.AttributeName)}}.png" />
+                            </div>
+                            <div class="flex" style="width:100%;height:20%;">
+                                <div class="percentage-container" style="width:80%;float:left">
+                                    <div class="percentage" ng-if="data.Volume=='NA'">
+                                        <span>{{data.Volume}}</span>
+
+                                    </div>
+                                    <div class="percentage {{setIndexColor(data.Index)}}" ng-if="data.Volume!='NA'">
+
+                                        <span>{{setValue(data.Volume)}}%</span>
+                                    </div>
+                                    <div class="separator"><span>|</span></div>
+                                    <div class="value"><span>{{setIndex(setValue(data.Index))}}</span></div>
+                                </div>
+                            </div>
+                            <div class="flex" style="width:100%;height:6%;float:left">
+                                <div class="grey-bottom-image"></div>
+                            </div>
+                            <div class="away-from-home-text dot-three-line" title="{{data.AttributeName}}" >{{data.AttributeName}}</div>
+                        </div>
+                     <div class="NoDataAvailable" style="display:none">No Data Available</div>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="vertical-separator"></div>
+            <div class="right-sub-widget">
+                <div class="widget-body">
+                    <div class="widget-header">TOP 6 CHANNEL DISTRIBUTION
+                        <div class="red-border-div"></div>
+                    </div>
+                    <div class="widget-content" id="channel-widget">
+                        <div class="widget-sub-content" ng-repeat="data in channelData">
+                            <div class="widget-title" title="{{data.AttributeName}}"><span>{{data.AttributeName}}</span></div>
+                            <div class="widget-sub-title">
+                                <div class="widget-chart-container">
+                                    <div class="widget-chart-left"></div>
+                                    <div class="where-parent-chart">
+                                        <div class="where-child-chart" style="width:{{setWidth(setValue(data.Volume, 'Channel Data'))}}"></div>
+                                    </div>
+                                    <div class="widget-chart-left"></div>
+                                </div>
+                                <div class="percentage-container">
+                                    <div class="percentage" ng-if="data.Volume=='NA'">
+                                        <span>{{data.Volume}}</span>
+
+                                    </div>
+                                    <div class="percentage {{setIndexColor(data.Index)}}" ng-if="data.Volume!='NA'">
+
+                                        <span>{{setValue(data.Volume)}}%</span>
+                                    </div>
+                                    <div class="separator"><span>|</span></div>
+                                    <div class="value"><span>{{setIndex(setValue(data.Index))}}</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="NoDataAvailable" style="display:none">No Data Available</div>
+                    </div>
+                </div>
+            </div>     
+        </div>
+        <div class="widget-container middle-widget" id="what-widget">
+        <div class="widget-head" style="left: 32%;">WHAT</div> 
+            <div class="what-sub-div" ng-repeat="data in whatWidget" index-value="{{$index + 1}}" widget-index-data-value="{{data.Volume}}">
+                <div class="what-percentage-div">
+                    <div class="what-percentage {{setIndexColor(data.Index)}}" ng-if="data.Volume!='NA'">{{setValue(data.Volume)}}%</div>
+                    <div class="what-percentage" ng-if="data.Volume=='NA'">{{(data.Volume)}}</div>
+                    <div class="what-separator">
+                        <div class="what-separator-image"></div>
+                    </div>
+                    <div class="what-change"><span>{{setIndex(setValue(data.Index))}}</span></div>
+                </div>
+                <div class="what-chart-div">
+                    <div class="what-chart-sub-div">
+                        <div class="what-parent-chart" ng-repeat="datax in whatArray">
+                            <div class="what-child-chart" id="what-child-{{$parent.$index + 1}}_{{datax}}"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="what-text flex">{{data.AttributeName}}</div>            
+            </div>
+           <div class="NoDataAvailable" style="display:none;font-size:15px">Data For "Pack Size Bought" Not Available</div>
+        </div>
+        <div class="widget-container right-widget" id="why-widget">
+            <div class="widget-head" style="left: 32%;">WHY</div> 
+            <div class="widget-body" style="margin-top:5%;height:90%">
+                <div class="widget-header">TOP 5 REASONS
+                    <div class="red-border-div"></div>
+                </div>
+                <div class="widget-content" id="why-widget-content">
+                    <div class="widget-sub-content" style="height:calc(100% / 5 - 7px)" ng-repeat="data in whywidget">
+                        <div class="widget-title" title="{{data.AttributeName}}"><span>{{data.AttributeName}}</span></div>
+                        <div class="widget-sub-title">
+                            <div class="widget-chart-container" style="width:75%">
+                                <div class="widget-chart-left"></div>
+                                <div class="widget-parent-chart">
+                                    <div class="widget-chart" style="width:{{setWidth(setValue(data.Volume, 'Why Widget'))}}">
+                                    </div>
+                                    <div class="widget-anchor why-anchor"></div>
+                                    </div>
+                                </div>
+                            <div class="percentage-container" style="width:23%">
+                                <div class="percentage" ng-if="data.Volume=='NA'">
+                                    <span>{{data.Volume}}</span>
+                                </div>
+                                <div class="percentage {{setIndexColor(data.Index)}}" ng-if="data.Volume!='NA'">
+
+                                    <span>{{setValue(data.Volume)}}%</span>
+                                </div>
+                                <div class="separator"><span>|</span></div>
+                                <div class="value" style="width:41%"><span>{{setIndex(setValue(data.Index))}}</span></div>
+                            </div>                      
+                        </div>
+                    </div> 
+                    <div class="NoDataAvailable" style="display:none;font-size:18px">No Data Available</div>   
+                </div>
+            </div>         
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,84 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/CBL/Home.css?v=2" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/CBL/Home.js?v=2"></script>
+    <link rel='shortcut icon' href='~/Content/Images/favicon.ico' type='image/x-icon' />
+    <title>CBL GLOBAL PORTAL</title>
+</head>
+<body>
+    <div class="mainDiv">
+        <div class="header">
+            <div class="cokeLogo"></div>
+            <div class="separator"></div>
+            <div class="toolLogo"></div>
+            <div class="settings inactive-settings">
+                <div class="settings-expand-div">
+                    <div class="settings-arrow"></div>
+                    <div class="settings-container">
+                        <div class="logOutContainer" onclick="logOut('@Url.Action("Login", "Login")')">
+                            <div class="exportImage logOutImage"></div>
+                            <div class="exportText">LOG OUT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainBody">
+            <div class="widgetMainDiv">
+                <div class="widget-top-header-d">DASHBOARDS</div>
+                <div class="widget-top-header-ad">ADVANCED ANALYTICS</div>
+                <div class="widget widget1" @*title="A one-stop snapshot of key consumer and consumption patterns of a beverage/moment"*@ data-name="FiveWProfileMenu" onclick="redirectToWidgets(this,'@Url.Action("Index", "FiveWProfile")')">
+                    <div class="widgetImg">
+                    </div>
+                    <div class="widget1Img widgetIcon"></div>
+                    <div class="widgetTextDiv">
+                        <div class="widgetText">5W PROFILE</div>
+                    </div>
+                    <div class="widgetTextDiv_sub" style="top: calc(50% - 35px);">
+                        <div class="widgetText_sub">A one stop snapshot of key consumer and consumption patterns of a beverage/moment</div>
+                    </div>
+
+                </div>
+                <div style="margin-left:0% " class="widget widget2" @*title="Identify the key categories and brands consumed in a moment"*@ data-name="DrinkingMomentsMenu" onclick="redirectToWidgets(this,'@Url.Action("Index", "DrinkingMomentsDeepDive")')">
+                    <div class="widgetImg"></div>
+                    <div class="widget2Img widgetIcon"></div>
+                    <div class="widgetTextDiv">
+                        <div class="widgetText">DRINKING MOMENTS DEEP DIVE</div>
+                    </div>
+                    <div class="widgetTextDiv_sub" style="top: calc(50% - 33px);">
+                        <div class="widgetText_sub">Identify the key categories and brands consumed in a moment</div>
+                    </div>
+                </div>
+                <div class="sprit-img shadowblock"></div>
+                <div style="margin-left:2%" class="widget widget3" @*title="Devise a strategy for each moment based on the brand’s strength and its right to win"*@ data-name="BrandFitAnalysisMenu" onclick="redirectToWidgets(this,'@Url.Action("Index", "BrandFitAnalysis")')">
+                    <div class="widgetImg"></div>
+                    <div class="widget3Img widgetIcon"></div>
+                    <div class="widgetTextDiv">
+                        <div class="widgetText">BRAND FIT TOOL</div>
+                        @*<ul>
+                                <li>
+                                    <div class="widgetText">BRAND FIT ANALYSIS</div>
+                                </li>
+                                <li><div class="widgetText-note">(Coming Soon)</div></li>
+                            </ul>*@
+                    </div>
+                    <div class="widgetTextDiv_sub" style="top: calc(50% - 26px);">
+                        <div class="widgetText_sub">Devise a strategy for a brand based on its strength and rights to win</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

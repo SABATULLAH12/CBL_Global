@@ -1,0 +1,160 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*<script src="~/Scripts/BrandFitAnalysis/BrandFitAnalysis.js"></script>*@
+@Styles.Render("~/Content/AAStyles")
+@Scripts.Render("~/bundles/AA")
+@*<link href="~/Content/BrandFitAnalysis/BrandFitAnalysis.css" rel="stylesheet" />*@
+
+<div class="leftBody" ng-controller="leftPanelCtrl">
+    @Html.Partial("_PartialLeftPanel")
+</div>
+
+<div ng-controller="rightPanelCtrl" class="rightBody" style="display:none">
+    <div class="header-selection-container">
+        <ul>
+            <li class="menu-option" ng-click="updateData('VOL. CONTR TO BRAND')">
+                <div class="menu-button-container">
+                    <div class="menu-button inactive-menu-button">
+                    </div>
+                </div>
+                <div class="menu-text-container">
+                    <span class="menu-text capLetter">Split of Brand volume by Drinking Moments</span>
+                </div>
+            </li>
+            <li class="menu-option" ng-click="updateData('SHARE OF BRAND')">
+                <div class="menu-button-container">
+                    <div class="menu-button inactive-menu-button">
+                    </div>
+                </div>
+                <div class="menu-text-container">
+                    <span class="menu-text capLetter">Brand Share in moment</span>
+                </div>
+            </li>
+            <li class="menu-option"  ng-click="updateData('FIT SCORE')">
+                <div class="menu-button-container">
+                    <div class="menu-button active-menu-button">
+                    </div>
+                </div>
+                <div class="menu-text-container">
+                    <span class="menu-text">FIT BETWEEN MOMENT AND BRAND</span>
+                </div>
+            </li>
+            @*<li class="menu-option" ng-click="updateData('NONE')">
+                <div class="menu-button-container">
+                    <div class="menu-button inactive-menu-button">
+                    </div>
+                </div>
+                <div class="menu-text-container">
+                    <span class="menu-text">NONE</span>
+                </div>
+            </li>*@
+        </ul>
+        <div class="bottom-shadow-line">
+            <div class="horizontal-shadow-box">
+                <div class="horizontal-shadow-content"></div>
+            </div>
+        </div>
+    </div>
+    <div class="result-table-container">
+        <div class="left-table-header"></div>
+        <div class="right-table-header">
+            <ul>
+                <li ng-repeat="dataRow in tableHeader track by $index">
+                    <div class="table-header-name">
+                        <span>{{dataRow.DrinkingMoment_Name}}</span>
+                    </div>
+                    <div class="widget-seperator">
+                        <div class="verticle-shadow-box">
+                            <div class="verticle-shadow-content"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="left-body-scroll-wrapper">
+            <div class="left-table-body">
+                <ul ng-repeat="dataRow in tableLeftBody track by $index">
+                    <li>
+                        <div class="table-header-name">
+                            <span>{{dataRow.CompareBy}}</span>
+                        </div>
+                        <div class="header-icon"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-body-scroll-wrapper">
+            <div onscroll="reposVertical(this);" class="right-table-body">
+                <ul ng-repeat="dataRow in tableRightBody track by $index">
+                    <li ng-repeat="data in dataRow.BrandFitEntityList track by $index" style="background-color:{{setIndexColor(data)}}">
+                        <div class="data-value" >
+                            <span>{{setRowData(data)}}</span>
+                        </div>
+                        
+                        <div class="data-icon-container">
+                            <div class="data-icon-5w-container" title="Back to 5W module">
+                                <div class="data-icon-5w" ng-if="data.IsLowSample==0"   ng-click="RedirectToDeepDive5W('@Url.Action("Index", "FiveWProfile")',data.DrinkingMoment_Id, 
+                                     data.DrinkingMoment_Name, dataRow.CompareById,dataRow.CompareBy,data.Vol_Cont_Volume,data.Share_DM_Volume,
+                                     data.Fit_Score_Volume,data.Measure,data.Share_Index)"></div>
+                                <div class="data-icon-5w" ng-if="data.IsLowSample==1"  style="pointer-events:none"></div>
+                            </div>
+                            <div class="data-icon-search-container" title="{{tableRightBody[0].Title}}">
+                                <div class="data-icon-search" ng-if="data.IsLowSample==0"  ng-click="RedirectToDeepDive5W('@Url.Action("DeepDive", "brandFitAnalysis")',data.DrinkingMoment_Id,
+                                      data.DrinkingMoment_Name, dataRow.CompareById,dataRow.CompareBy,data.Vol_Cont_Volume,
+                                     data.Share_DM_Volume,data.Fit_Score_Volume,data.Measure,data.Share_Index)"></div>
+                                <div class="data-icon-search" ng-if="data.IsLowSample==1" style="pointer-events:none"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="tableDatanotAvailable" ng-show="!tableRightBody.length">Data Not Avalilable</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-signs">
+        <ul>
+            <li>
+                <div class="sign-container">
+                    <div class="green-sign sign-icon">
+                    </div>
+                    <div class="sign-title">
+                        <span>DEFEND(High share index and high fit)</span>
+                    </div>
+                   
+                </div>
+            </li>
+            <li>
+                <div class="sign-container">
+                    <div class="gray-sign sign-icon">
+                    </div>
+                    <div class="sign-title">
+                        <span>RESHAPE(High share index and low fit)</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="sign-container">
+                    <div class="white-sign sign-icon">
+                    </div>
+                    <div class="sign-title">
+                        <span>RECONSIDER(Low share index and low fit)</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="sign-container">
+                    <div class="yellow-sign sign-icon">
+                    </div>
+                    <div class="sign-title">
+                        <span>EXPAND(Low share index and high fit)</span>
+                    </div>
+                </div>
+            </li>            
+        </ul>
+    </div>
+</div>
+

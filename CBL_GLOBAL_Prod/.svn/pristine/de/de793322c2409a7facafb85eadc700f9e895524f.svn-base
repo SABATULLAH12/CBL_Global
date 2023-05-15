@@ -1,0 +1,388 @@
+﻿body {
+    min-width: 1366px;
+    min-height: 657px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sprit-img {
+    background-image: url('../Images/CBL Global_sprite_V10.png');
+}
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../../fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+}
+
+.mainDiv {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('../Images/CBL Global_BG.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.header {
+    /*position:relative;*/
+    width: 100%;
+    height: 65px;
+}
+
+.mainBody {
+    position: relative;
+    width: 98%;
+    height: 87%;
+    background: url('../Images/CBL Global_Landing BG.jpg') no-repeat;
+    background-size: 100% 100%;
+    margin-left: 1%;
+}
+
+.cokeLogo {
+    float: left;
+    height: 100%;
+    background: url('../Images/CBL Global_sprite_V2.png') no-repeat 0 0;
+    width: 75px;
+    margin-left: 38%;
+    margin-top: 20px;
+}
+
+.toolLogo {
+    background: url('../Images/CBL Global_sprite_V2.png') no-repeat -103px 0;
+    width: 177px;
+    height: 100%;
+    float: left;
+    margin-left: 29px;
+    margin-top: 14px;
+}
+
+.separator {
+    background: url('../Images/CBL Global_sprite_V2.png') no-repeat -327px 0;
+    width: 2px;
+    float: left;
+    height: 100%;
+    margin-top: 13px;
+    margin-left: 29px;
+}
+
+.settings {
+    width: 45px;
+    height: 100%;
+    float: right;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.inactive-settings {
+    background: url('../Images/CBL Global_sprite_V2.png') no-repeat -699px -1px;
+}
+
+.active-settings {
+    background: url('../Images/CBL Global_sprite_V4.png') no-repeat -1130px -1px;
+}
+
+.settings:hover {
+    background: url('../Images/CBL Global_sprite_V4.png') no-repeat -1130px -1px;
+}
+
+.settings-arrow {
+    background: url('../Images/CBL Global_sprite_V4.png') no-repeat -1204px 0;
+    width: 13px;
+    height: 7px;
+    float: right;
+    margin-right: 12px;
+    margin-top: -7px;
+}
+
+.settings-container {
+    background: #000000;
+    width: 9.688em;
+    height: 2.542em;
+    border-radius: 0px 0px 3px 3px;
+    border-top: 1px Solid #EA1F2A;
+}
+
+.settings-expand-div {
+    position: absolute;
+    top: 51px;
+    right: 31px;
+    display: none;
+    z-index: 1;
+}
+
+.logOutContainer {
+    width: 88%;
+    height: 100%;
+    position: relative;
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
+}
+
+.logOutImage {
+    background: url('../Images/CBL Global_sprite_V4.png') no-repeat -1439px 0;
+    width: 23px;
+    height: 18px;
+    margin-left: 6%;
+    margin-right: 8%;
+}
+
+
+.exportText {
+    font-family: Montserrat-Light;
+    font-size: 0.625em;
+    color: #FFFFFF;
+}
+
+
+
+.logOutContainer:hover .logOutImage {
+    background: url('../Images/CBL Global_sprite_V4.png') no-repeat -1491px 0;
+}
+
+.logOutContainer:hover .exportText {
+    font-family: Montserrat-Regular;
+}
+
+
+.widgetMainDiv {
+    position: absolute;
+    width: 75%;
+    height: 60%;
+    top: 22%;
+    left: 13%;
+}
+
+.widget {
+    position: relative;
+    width: calc(100% / 3 - 5%);
+    height: 100%;
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+    margin-left: 5%;
+}
+/*Needs to be removed*/
+/*.widget1,*/
+/*.widget3{
+    pointer-events:none;
+}*/
+
+.widgetImg {
+    background: url('../Images/CBL Global_LoginLanding_SpriteV2.png') no-repeat -579px -297px;/*-11px -305px;*/
+    width: 227px;
+    height: 258px;/*191px;*/
+    /* float: left; */
+    top: 54%;/*50%;*/
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.widget:hover .widgetImg {
+    background: url('../Images/CBL Global_LoginLanding_SpriteV2.png') no-repeat -836px -302px;/*-269px -302px;*/
+    width: 279px;
+    height: 318px;
+    top: 61%
+}
+
+
+.widget:hover .widgetText {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1E1E1E;
+    font-family: Montserrat-Regular;
+}
+
+.widget:hover>.widgetTextDiv {
+    top: calc(50% - 2px)!important;
+}
+.widget:hover>.widgetTextDiv_sub {
+    top: calc(50% - -15px)!important;
+}
+
+.widget1:hover .widget1Img {
+    background: url('../Images/CBL Global_LoginLanding_SpriteV2.png') no-repeat -3px -593px;
+    width: 79px;
+    height: 75px;
+}
+
+.widget2:hover .widget2Img {
+    background: url('../Images/CBL Global_LoginLanding_SpriteV2.png') no-repeat -89px -591px;
+    width: 67px;
+    height: 72px;
+}
+
+.widget3:hover .widget3Img {
+    background: url('../Images/CBL Global_LoginLanding_SpriteV2.png') no-repeat -158px -588px;
+    width: 75px;
+    height: 77px;
+}
+
+.widget:hover .widgetIcon {
+    top: calc(50% - 58px);
+}
+
+
+.widgetText,.widgetText_sub {
+    text-transform: uppercase;
+    color: #777777;
+    font-family: Montserrat-Medium;
+    font-size: 13px;
+    /* position: absolute; */
+    /* height: 42px; */
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+.widgetText_sub {
+     font-family: Montserrat-Light;
+}
+
+.widgetTextDiv,.widgetTextDiv_sub {
+    position: relative;
+    top: calc(50% - 39px);/*calc(50% - 12px);*/
+    left: 50%;
+    /* float: left; */
+    width: 170px;
+    height: 50px;
+    display: flex;
+    line-height: 20px;
+    transform: translate(-50%, -50%);
+}
+.widgetTextDiv_sub {
+     top: calc(50% - 33px);
+}
+.widgetText_sub {
+    
+    font-size: 10px;
+    line-height:16px;
+    width: 90%;
+}
+
+.widgetIcon {
+    position: relative;
+    top: calc(50% - 63px);/*calc(50% - 40px);*/
+    left: 51%;
+    /*display: inline-flex;*/
+    transform: translate(-50%, -50%);
+}
+
+.widget1Img {
+    background: url('../Images/CBL Global_LoginLanding_SpriteV2.png') no-repeat -5px -519px;
+    width: 66px;
+    height: 64px;
+}
+
+.widget2Img {
+    background: url('../Images/CBL Global_LoginLanding_SpriteV2.png') no-repeat -82px -517px;
+    width: 56px;
+    height: 61px;
+}
+
+.widget3Img {
+    background: url('../Images/CBL Global_LoginLanding_SpriteV2.png') no-repeat -147px -517px;
+    width: 53px;
+    height: 55px;
+}
+
+.widget1ImgActive {
+    background: url('../Images/CBL Global_LoginLanding_SpriteV2.png') no-repeat -3px -593px;
+    width: 79px;
+    height: 75px;
+}
+
+.widget2ImgActive {
+    background: url('../Images/CBL Global_LoginLanding_SpriteV2.png') no-repeat -89px -591px;
+    width: 67px;
+    height: 72px;
+}
+
+.widget3ImgActive {
+    background: url('../Images/CBL Global_LoginLanding_SpriteV2.png') no-repeat -158px -588px;
+    width: 75px;
+    height: 77px;
+}
+
+.GeoToolTip {
+    min-width: 200px;
+    height: auto;
+    padding: 5px;
+    background: rgba(48, 48, 48,0.8);
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.widgetTextDiv ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+    .widgetTextDiv ul li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+.widgetText-note {
+    font-size: 10px;
+    color: red;
+}
+
+.widget-top-header-d {
+    text-transform: uppercase;
+    color: #777777;
+    font-family: Montserrat-Medium;
+    font-size: 1em;
+    margin-left: 28%;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+}
+
+.widget-top-header-ad {
+    text-transform: uppercase;
+    color: #777777;
+    font-family: Montserrat-Medium;
+    font-size: 1em;
+    margin-left: 73%;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+}
+.shadowblock {
+    background-position:-1053px -941px;
+    float: left;
+    display: inline-block;
+    width: 3%;
+    height: 100%;
+    max-height:29vw;
+    /*box-shadow: 13px 0px 9px -14px;*/
+}
+
+.shadowblock_old {
+    float: left;
+    display: inline-block;
+    width: 5%;
+    height: 90%;
+    box-shadow: 7px 0px 9px -4px;
+}

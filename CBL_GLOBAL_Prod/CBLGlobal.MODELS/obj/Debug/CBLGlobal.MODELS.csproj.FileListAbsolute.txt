@@ -1,0 +1,14 @@
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBLGlobal.MODELS\bin\Debug\CBLGlobal.MODELS.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBLGlobal.MODELS\bin\Debug\CBLGlobal.MODELS.pdb
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBLGlobal.MODELS\obj\Debug\CBLGlobal.MODELS.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBLGlobal.MODELS\obj\Debug\CBLGlobal.MODELS.pdb
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBLGlobal.MODELS\bin\Debug\CBLGlobal.MODELS.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBLGlobal.MODELS\bin\Debug\CBLGlobal.MODELS.pdb
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBLGlobal.MODELS\obj\Debug\CBLGlobal.MODELS.csprojResolveAssemblyReference.cache
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBLGlobal.MODELS\obj\Debug\CBLGlobal.MODELS.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\Development\CBLGlobal.MODELS\obj\Debug\CBLGlobal.MODELS.pdb
+D:\KI_Project\CBL_GLOBAL_Prod\CBLGlobal.MODELS\bin\Debug\CBLGlobal.MODELS.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBLGlobal.MODELS\bin\Debug\CBLGlobal.MODELS.pdb
+D:\KI_Project\CBL_GLOBAL_Prod\CBLGlobal.MODELS\obj\Debug\CBLGlobal.MODELS.csprojResolveAssemblyReference.cache
+D:\KI_Project\CBL_GLOBAL_Prod\CBLGlobal.MODELS\obj\Debug\CBLGlobal.MODELS.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBLGlobal.MODELS\obj\Debug\CBLGlobal.MODELS.pdb

@@ -1,0 +1,147 @@
+﻿
+@{
+    ViewBag.Title = "CBL GLOBAL PORTAL";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*<link href="~/Content/DrinkingMomentsDeepDive/DrinkingMomentsDeepDive.css??v=7" rel="stylesheet" />*@
+@Styles.Render("~/Content/DMDStyles")
+@Scripts.Render("~/bundles/DMD")
+@*<script src="~/Scripts/DrinkingMomentsDeepDive/DrinkingMomentsDeepDive.js??v=7"></script>*@
+<div class="leftBody" ng-controller="leftPanelCtrl">
+    @Html.Partial("_PartialLeftPanel")
+</div>
+
+<div class="rightBody" ng-controller="rightPanelCtrl" style="display:none;">
+    <div class="top-widgets">
+        <div class="top-widgets-header">
+            <div class="header-icon"></div>
+            <span class="selected-market"></span>
+            <span class="top-widgets-right-header">Vol. Mix, Indexed to Benchmark | KO Share</span>       
+        </div>
+        <div class="widget-scroll">
+            <div class="widger-wraper">
+                <div class="widget-content" data-id="{{data.DrinkingMoment_Id}}" ng-repeat="data in topWidgetList" ng-click="updateMiddleWidgetsData(data.CategoryShareList, data.CategoryShareList[0].BrandShareList)">
+                    <ul>
+                        <li class="widget-title-container">
+                            <div class="widget-title" style="display: table;position: relative;">                                
+                                <div class="sprit-img img-box-top" style="background-position:{{topWidgetList.DM_Pos[data.DrinkingMoment_Name].img1}}"></div>
+                                <span class="box-img-txt" >{{data.DrinkingMoment_Name}}</span>
+                                @*<span>{{data.DrinkingMoment_Name}}</span>*@                                
+                            </div>
+                            <div class="widget-img-seperator unselected-widget-img-seperator" style="top: 137%;background-position:{{topWidgetList.DM_Pos[data.DrinkingMoment_Name].img2}}"></div>
+                        </li>
+                        <li>
+                            <div class="widget-percentage">
+                                <ul>
+                                    <li><span class="change-percentage {{setIndexColor(data.DMShare.Index)}}">{{setValue(data.DMShare.Volume)}}</span></li>
+                                    <li><span class="percentage-seperator">|</span></li>
+                                    <li><span class="previous-percentage grey-index">{{checkSampleSize(data.DMKOShare.Volume, data.DMKOShare.SampleSize)}}</span></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="widget-seperator">
+                        <div class="verticle-shadow-box">
+                            <div class="verticle-shadow-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle-widgets">
+        <div class="middle-widgets-header">
+            <div class="header-icon"></div>
+            <span class="selected-DM capLetter"></span>    
+            <span class="middle-widgets-right-header"> % Vol in DM, Indexed to Base | KO Share in DM</span>            
+        </div>
+        <div class="widget-scroll">
+            <div class="widger-wraper">
+                <div class="widget-content" ng-repeat="data in middleWidgetList" ng-click="updateBottomWidgetsData(data.BrandShareList)">
+                    <ul>
+                        <li class="widget-title-container share-container">
+                            <div class="widget-percentage top-percentage">
+                                <ul>
+                                    <li class="middle-widget-text"><span class="widget-name" title="{{data.Category_Name}}">{{data.Category_Name}}</span></li>
+                                    <li class="middle-widget-value"><span class="widget-percentage {{setSampleSizeIndexColor(data.CategoryShare.Index, data.CategoryShare.SampleSize)}}">{{checkSampleSize(data.CategoryShare.Volume, data.CategoryShare.SampleSize)}}</span></li>
+                                </ul>                               
+                            </div>        
+                                        
+                        </li>
+                        <li class="share-seperator">
+                            <div class="horizontal-shadow-box">
+                                <div class="horizontal-shadow-content"></div>
+                            </div>  
+                        </li>
+                        <li class="ko-share-container">
+                            <div class="widget-percentage bottom-percentage">
+                                <ul>
+                                    <li class="middle-widget-text"><span class="widget-name">KO SHARE</span></li>
+                                    <li class="middle-widget-value"><span class="widget-percentage grey-index">{{checkKOShareSampleSize(data)}}</span></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="widget-box unselected-widget-box" style="background-image:url(../Content/Images/Icons/Category/DM/{{setCategoryIcon(data.Category_Name)}}.png)" category-id="{{data.Category_Id}}" category-name="{{data.Category_Name}}">
+                        @*<img class="category-img" src="~/Content/Images/Icons/Category/DM/{{setCategoryIcon(data.Category_Name)}}.png" />*@
+                    </div> 
+                    <div class="vertical-seperator unselected-verticle-widget-seperator">
+                    </div>                   
+                </div>
+            </div>
+        </div>
+        </div>
+    <div class="bottom-widgets">
+        <div class="bottom-widgets-header">
+            <div class="header-icon"></div>
+            <span class="selected-widget capLetter"></span>          
+        </div>       
+        <div class="widget-scroll">
+            <div class="bottom-widget-container" ng-repeat="data in bottomWidgetList">
+                <div class="bottom-widget-body">
+                    <div class="category-container share-container" index-value="{{$index + 1}}" widget-index-data-value="{{data.ShareInCategory.BrandShare.Volume}}">
+                        <div class="bottom-widget-title">
+                            <div class="widget-text capLetter">share of moment</div>
+                        </div>
+                        <div class="bottom-widget-value grey-index" id="bottom-category-value">{{checkSampleSize(data.ShareInCategory.BrandShare.Volume, data.ShareInCategory.BrandShare.SampleSize)}}</div>
+                        <div class="bottom-widget-chart">
+                            <div class="chart-container">
+                                <div class="parent-div" ng-repeat="x in array">
+
+                                    <div class="child-div" id="child-category_{{$parent.$index + 1}}_{{x}}"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="bottom-widget-change">
+                            <div class="change-value" id="bottom-category-change">{{setBottomWidgetShareDifferenceValue(data.ShareInCategory.BrandShareDifference.Volume)}}</div>
+                            <div class="{{setBottomWidgetIndexSign(data.ShareInCategory.BrandShareDifference.Volume)}}" id="bottom-category-icon"></div>
+                        </div>
+                    </div>
+                    <div class="separator-container"></div>
+                    <div class="market-container share-container" index-value="{{$index + 1}}" widget-index-data-value="{{data.ShareInMarket.BrandShare.Volume}}">
+                        <div class="bottom-widget-title">
+                            <div class="widget-text capLetter">share in market</div>
+                        </div>
+                        <div class="bottom-widget-value grey-index" id="bottom-market-value">{{checkSampleSize(data.ShareInMarket.BrandShare.Volume, data.ShareInMarket.BrandShare.SampleSize)}}</div>
+                        <div class="bottom-widget-chart">
+                            <div class="chart-container">
+                                <div class="parent-div" ng-repeat="x in array">
+
+                                    <div class="child-div" id="child-market_{{$parent.$index + 1}}_{{x}}"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="bottom-widget-change">
+                            <div class="change-value" id="bottom-market-change">{{setBottomWidgetShareDifferenceValue(data.ShareInMarket.BrandShareDifference.Volume)}}</div>
+                            <div class="{{setBottomWidgetIndexSign(data.ShareInMarket.BrandShareDifference.Volume)}}" id="bottom-market-icon"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bottom-widget-footer" title="{{data.Brand_Name}}"><span>{{data.Brand_Name}}</span></div>
+            </div>
+        </div>
+    </div>
+</div>

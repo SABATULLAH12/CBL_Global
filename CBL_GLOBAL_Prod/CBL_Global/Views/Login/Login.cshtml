@@ -1,0 +1,60 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/CBL/Login.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/CBL/Global.js"></script>
+    <script src="~/Scripts/CBL/Login.js"></script>
+    <link rel='shortcut icon' href='~/Content/Images/favicon.ico' type='image/x-icon' />
+    <title>CBL GLOBAL PORTAL</title>
+</head>
+<body>
+    <div class="mainLoginDiv"> 
+        <div class="loginContainer">
+            <div class="Logo">
+                <div class="loginImgDiv">
+                    <div class="logo1">
+                    </div>
+                </div>
+                <div class="loginImgDiv">
+                    <div class="logo2"></div>
+                </div>
+            </div>
+            <div class="userDetails">
+                <div class="userContainer">
+                    <div class="userNameMainDiv userMainDiv">
+                        <div class="userNameImg"></div>
+                        <div class="userNameDiv userDiv">
+                          <input type="email" placeholder="USERNAME" autocomplete="off" class="userName userInput" />
+                         </div>
+                    </div>
+                </div>
+                <div class="userContainer" style="margin-top:3%">
+                    <div class="passwordMainDiv userMainDiv">
+                        <div class="passwordImg"></div>
+                        <div class="passwordDiv userDiv">
+                            <input type="password" placeholder="PASSWORD" class="password userInput" autocomplete="off" />
+                        </div>
+                    </div>
+                </div>
+                <div class="userContainer" style="margin-top:10%;height:15%" onclick="checkAuth()">
+                    <div class="submitDiv">SUBMIT</div>
+                </div>
+                @*<div class="userContainer" style="height:5%; margin-top:0">
+                    <div class="forgotPasDiv">Forgot Password</div>
+                </div>*@
+            </div>
+
+            <div class="aqLogo"></div>
+        </div>
+    </div>
+    @Html.Hidden("URLHome", Url.Action("Home", "Home"))
+</body>
+</html>

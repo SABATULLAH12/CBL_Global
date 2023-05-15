@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\10128\Desktop\CBL Release Base\CBL_20190712\</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Aspose.Slides.lic">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>07/11/2019 16:40:15</publishTime>
+    </File>
+    <File Include="bin/AQLogger.dll">
+      <publishTime>07/11/2019 16:40:02</publishTime>
+    </File>
+    <File Include="bin/Aspose.Slides.dll">
+      <publishTime>07/11/2019 16:40:02</publishTime>
+    </File>
+    <File Include="bin/CBLGlobal.MODELS.dll">
+      <publishTime>07/11/2019 18:32:05</publishTime>
+    </File>
+    <File Include="bin/CBLGlobalBAL.dll">
+      <publishTime>07/11/2019 18:32:06</publishTime>
+    </File>
+    <File Include="bin/CBLGlobalDAL.dll">
+      <publishTime>07/11/2019 18:32:05</publishTime>
+    </File>
+    <File Include="bin/CBL_Global.dll">
+      <publishTime>07/12/2019 20:02:16</publishTime>
+    </File>
+    <File Include="bin/EPPlus.dll">
+      <publishTime>07/11/2019 16:40:02</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>07/11/2019 16:40:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>07/11/2019 16:40:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>07/11/2019 16:40:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <publishTime>07/11/2019 16:40:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/11/2019 16:40:17</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/11/2019 16:40:18</publishTime>
+    </File>
+    <File Include="bin/OfficeOpenXml.Core.ExcelPackage.dll">
+      <publishTime>07/11/2019 16:40:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>07/11/2019 16:40:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>07/11/2019 16:40:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>07/11/2019 16:40:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>07/11/2019 16:40:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>07/11/2019 16:40:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>07/11/2019 16:40:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>07/11/2019 16:40:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>07/11/2019 16:40:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>07/11/2019 16:40:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>07/11/2019 16:40:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>07/11/2019 16:40:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>07/11/2019 16:40:17</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>07/11/2019 16:40:15</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>07/11/2019 16:40:15</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>07/11/2019 16:40:15</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>07/11/2019 16:40:15</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>07/11/2019 16:40:15</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>07/11/2019 16:40:15</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>07/11/2019 16:40:15</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>07/11/2019 16:40:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Content/BrandFitAnalysis/BrandFitAnalysis.css">
+      <publishTime>07/11/2019 16:39:45</publishTime>
+    </File>
+    <File Include="Content/BrandFitAnalysis/DeepDive.css">
+      <publishTime>07/11/2019 16:39:45</publishTime>
+    </File>
+    <File Include="Content/CBL/Home.css">
+      <publishTime>07/11/2019 16:39:45</publishTime>
+    </File>
+    <File Include="Content/CBL/LeftPanelFilters.css">
+      <publishTime>07/11/2019 16:39:45</publishTime>
+    </File>
+    <File Include="Content/CBL/Login.css">
+      <publishTime>07/11/2019 16:39:45</publishTime>
+    </File>
+    <File Include="Content/CBL/Master.css">
+      <publishTime>07/12/2019 16:54:03</publishTime>
+    </File>
+    <File Include="Content/DrinkingMomentsDeepDive/DrinkingMomentsDeepDive.css">
+      <publishTime>07/11/2019 16:39:45</publishTime>
+    </File>
+    <File Include="Content/FiveWProfile/FiveWProfile.css">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Content/Images/BrandFit/Global_circle.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/BrandFit/orange_box.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/BrandFit/red_box.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_BG.jpg">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_donut chart bg.png">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_Landing BG.jpg">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_LoginLanding_Sprite.png">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_LoginLanding_SpriteV2.png">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_LoginLanding_Sprite_BG.jpg">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_pi chart bg.png">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_red bg.png">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_sprite.png">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_sprite_V10.png">
+      <publishTime>07/11/2019 16:52:43</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_sprite_V2.png">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_sprite_V4.png">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_sprite_V5.png">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_sprite_V6.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_sprite_V7.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_sprite_V8.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/CBL Global_table bg.jpg">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Content/Images/DM-selected-bg.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/DrinkingMoments/Category_Widget/horizontal_shadow_seperator.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/DrinkingMoments/Category_Widget/selected_category_box.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/DrinkingMoments/Category_Widget/selected_category_right_seperator.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/DrinkingMoments/Category_Widget/unselected_category_box.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/DrinkingMoments/Category_Widget/unselected_category_right_seperator.png">
+      <publishTime>07/11/2019 16:39:47</publishTime>
+    </File>
+    <File Include="Content/Images/DrinkingMoments/selected_category_bg.svg">
+      <publishTime>07/11/2019 16:39:47</publishTime>
+    </File>
+    <File Include="Content/Images/DrinkingMoments/unselected_category_bg.svg">
+      <publishTime>07/11/2019 16:39:47</publishTime>
+    </File>
+    <File Include="Content/Images/favicon.ico">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/Beer.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/EnergyDrinks.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/LightCoreSparkling.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/Non-Commercial-HomemadeMilk-Dairy.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/Non-CommercialWater.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/NRTDJuices&amp;JuiceDrinks.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/NRTDTea-Infusion.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/OtherAlcoholicBeverages.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/OtherNon-AlcoholicDrinks.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/PackagedWater.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/PlantBasedDrinks.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/PreparedNRTDCoffee.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/RegularCoreSparkling.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/RTDCoffee.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/RTDJuices&amp;JuiceDrinks.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/RTDTea.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/Smoothies.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/SportsDrinks.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Category/TotalCommercialMilk-Dairy.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Location/AtABar-Club.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Location/AtaLeisureDestination.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Location/AtaRestaurant.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Location/AtaStore.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Location/AtHome.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Location/AtSchool.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Location/AtSomeOtherPlace.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Location/AtWork.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Location/InTheNeighbourhoodNearHome.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Location/InTransportation.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/Location/OntheStreet.png">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Images/loader.gif">
+      <publishTime>07/11/2019 16:39:46</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>07/11/2019 16:40:06</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>07/11/2019 16:40:06</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>07/11/2019 16:40:06</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>07/11/2019 16:40:06</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>07/11/2019 16:40:06</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-Black.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-BlackItalic.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-Bold.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-BoldItalic.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-ExtraBold.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-ExtraLight.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-ExtraLightItalic.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-Italic.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-Light.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-LightItalic.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-Medium.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-MediumItalic.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-Regular.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-SemiBold.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-SemiBoldItalic.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-Thin.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/Montserrat-ThinItalic.ttf">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="fonts/Montserrat/OFL.txt">
+      <publishTime>07/11/2019 16:40:06</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>07/11/2019 16:40:06</publishTime>
+    </File>
+    <File Include="Logs/Logs.txt">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>07/11/2019 16:40:04</publishTime>
+    </File>
+    <File Include="Scripts/angular.min.js">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Scripts/BrandFitAnalysis/BrandFitAnalysis.js">
+      <publishTime>07/11/2019 19:09:58</publishTime>
+    </File>
+    <File Include="Scripts/BrandFitAnalysis/DeepDive.js">
+      <publishTime>07/11/2019 16:39:49</publishTime>
+    </File>
+    <File Include="Scripts/canvg/bower.json">
+      <publishTime>07/11/2019 16:39:51</publishTime>
+    </File>
+    <File Include="Scripts/canvg/canvg.js">
+      <publishTime>07/11/2019 16:39:51</publishTime>
+    </File>
+    <File Include="Scripts/canvg/canvg.min.js">
+      <publishTime>07/11/2019 16:39:51</publishTime>
+    </File>
+    <File Include="Scripts/canvg/component.json">
+      <publishTime>07/11/2019 16:39:51</publishTime>
+    </File>
+    <File Include="Scripts/canvg/html2canvas.js">
+      <publishTime>07/11/2019 16:39:51</publishTime>
+    </File>
+    <File Include="Scripts/canvg/html2canvas.svg.js">
+      <publishTime>07/11/2019 16:39:51</publishTime>
+    </File>
+    <File Include="Scripts/canvg/MIT-LICENSE.txt">
+      <publishTime>07/11/2019 16:39:51</publishTime>
+    </File>
+    <File Include="Scripts/canvg/package.json">
+      <publishTime>07/11/2019 16:39:51</publishTime>
+    </File>
+    <File Include="Scripts/canvg/README.md">
+      <publishTime>07/11/2019 16:39:51</publishTime>
+    </File>
+    <File Include="Scripts/canvg/rgbcolor.js">
+      <publishTime>07/11/2019 16:39:51</publishTime>
+    </File>
+    <File Include="Scripts/canvg/StackBlur.js">
+      <publishTime>07/11/2019 16:39:51</publishTime>
+    </File>
+    <File Include="Scripts/CBL/Global.js">
+      <publishTime>07/11/2019 16:39:50</publishTime>
+    </File>
+    <File Include="Scripts/CBL/Home.js">
+      <publishTime>07/11/2019 16:39:50</publishTime>
+    </File>
+    <File Include="Scripts/CBL/LeftPanelFilters.js">
+      <publishTime>07/12/2019 16:54:03</publishTime>
+    </File>
+    <File Include="Scripts/CBL/Login.js">
+      <publishTime>07/11/2019 16:39:50</publishTime>
+    </File>
+    <File Include="Scripts/CBL/Master.js">
+      <publishTime>07/11/2019 16:39:50</publishTime>
+    </File>
+    <File Include="Scripts/D3/d3.js">
+      <publishTime>07/11/2019 16:39:50</publishTime>
+    </File>
+    <File Include="Scripts/D3/d3.v3.min.js">
+      <publishTime>07/11/2019 16:39:50</publishTime>
+    </File>
+    <File Include="Scripts/DrinkingMomentsDeepDive/DrinkingMomentsDeepDive.js">
+      <publishTime>07/11/2019 16:39:48</publishTime>
+    </File>
+    <File Include="Scripts/FiveWProfile/FiveWProfile.js">
+      <publishTime>07/11/2019 16:39:49</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui.js">
+      <publishTime>07/11/2019 16:52:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui.min.js">
+      <publishTime>07/11/2019 16:52:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Scripts/lodash.min.js">
+      <publishTime>07/11/2019 16:52:43</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Scripts/Scroll/jquery.nicescroll.js">
+      <publishTime>07/11/2019 16:39:51</publishTime>
+    </File>
+    <File Include="Scripts/Scroll/jquery.nicescroll.min.js">
+      <publishTime>07/11/2019 16:39:51</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>07/11/2019 16:52:43</publishTime>
+    </File>
+    <File Include="Temp/ExportedFiles/CBLGlobal.MODELS.EntityModel.UserEntity/DrinkingMoment_DeepDive_180219.pptx">
+      <publishTime>07/11/2019 16:40:05</publishTime>
+    </File>
+    <File Include="Templates/5W_ExcelTemplate.xlsx">
+      <publishTime>07/11/2019 16:39:55</publishTime>
+    </File>
+    <File Include="Templates/CBLGlobalPPTTemplate.pptx">
+      <publishTime>07/11/2019 16:39:55</publishTime>
+    </File>
+    <File Include="Templates/Global_Drinking_Moment_Deepdive_Template.xlsx">
+      <publishTime>07/11/2019 16:39:55</publishTime>
+    </File>
+    <File Include="Views/BrandFitAnalysis/DeepDive.cshtml">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Views/BrandFitAnalysis/Index.cshtml">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Views/DrinkingMomentsDeepDive/Index.cshtml">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Views/FiveWProfile/Index.cshtml">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Views/Home/Home.cshtml">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Views/Login/Login.cshtml">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>07/11/2019 16:52:43</publishTime>
+    </File>
+    <File Include="Views/Shared/_PartialLeftPanel.cshtml">
+      <publishTime>07/12/2019 16:54:03</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>07/11/2019 16:39:53</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/12/2019 20:02:21</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

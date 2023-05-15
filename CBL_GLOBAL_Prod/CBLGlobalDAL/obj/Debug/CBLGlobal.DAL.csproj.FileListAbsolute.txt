@@ -1,0 +1,22 @@
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBLGlobalDAL\bin\Debug\CBLGlobalDAL.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBLGlobalDAL\bin\Debug\CBLGlobalDAL.pdb
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBLGlobalDAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBLGlobalDAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBLGlobalDAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBLGlobalDAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBLGlobalDAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBLGlobalDAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBLGlobalDAL\obj\Debug\CBLGlobal.DAL.csprojResolveAssemblyReference.cache
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBLGlobalDAL\obj\Debug\CBLGlobalDAL.dll
+D:\Projects\Working Projects\CBL Global\CBL_Global_SVN_Working\trunk\Source\CBLGlobalDAL\obj\Debug\CBLGlobalDAL.pdb
+D:\KI_Project\CBL_GLOBAL_Prod\CBLGlobalDAL\bin\Debug\CBLGlobalDAL.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBLGlobalDAL\bin\Debug\CBLGlobalDAL.pdb
+D:\KI_Project\CBL_GLOBAL_Prod\CBLGlobalDAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBLGlobalDAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBLGlobalDAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBLGlobalDAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBLGlobalDAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBLGlobalDAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBLGlobalDAL\obj\Debug\CBLGlobal.DAL.csprojResolveAssemblyReference.cache
+D:\KI_Project\CBL_GLOBAL_Prod\CBLGlobalDAL\obj\Debug\CBLGlobalDAL.dll
+D:\KI_Project\CBL_GLOBAL_Prod\CBLGlobalDAL\obj\Debug\CBLGlobalDAL.pdb

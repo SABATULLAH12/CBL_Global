@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBL GLOBAL PORTAL</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @*<script src="~/Scripts/angular.min.js"></script>*@
+    @Scripts.Render("~/bundles/commonlayout")
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery-ui.js"></script>
+    <script src="~/Scripts/Scroll/jquery.nicescroll.js?1"></script>
+    <script src="~/Scripts/lodash.min.js"></script>
+    <script src="~/Scripts/canvg/canvg.min.js"></script>
+    <script src="~/Scripts/canvg/html2canvas.js"></script>
+    <script src="~/Scripts/canvg/html2canvas.svg.js"></script>
+    @*<script src="~/Scripts/CBL/Global.js"></script>
+    <script src="~/Scripts/CBL/Master.js?2"></script>*@
+    @Styles.Render("~/Content/MasterStyles")
+   @Scripts.Render("~/bundles/layout")   
+    @*<link href="~/Content/CBL/Master.css?2" rel="stylesheet" />*@
+    <link rel='shortcut icon' href='~/Content/Images/favicon.ico' type='image/x-icon' />
+    
+</head>
+<body ng-app="myApp">
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+
+        </div>*@
+    <div class="mainLayoutContainer">
+        <div class="masterHeader">
+            <div class="logo">
+                <div class="cokeLogoImg"></div>
+                <div class="separatorImg"></div>
+                <div class="toolLogoImg"></div>
+            </div>
+            <div class="menu-div">
+                <div class="separator-img"></div>
+                <div class="menu menu1" id="DashboardMenu" onclick="RedirectToSubMenu(this, '@Url.Action("Index", "FiveWProfile")')">DASHBOARD</div>
+                <div class="separator-img"></div>
+                <div class="menu menu2 capLetter" id="AdvancedAnalyticsMenu" onclick="RedirectToSubMenu(this, '@Url.Action("Index", "BrandFitAnalysis")')">Fit Tool</div>
+                <div class="separator-img"></div>
+            </div>
+            <div id="settings-div" class="inactive-settings">
+                <div class="settings-expand-div">
+                    <div class="settings-arrow"></div>
+                    <div class="settings-container">
+                        <div class="exportContainer exportExcelContainer"   onclick="exportExcel()">
+                            <div class="exportImage sprit-img exportExcelImage"></div>
+                            <div class="exportText">EXPORT EXCEL</div>
+                        </div>
+                        <div class="exportContainer exportPPTContainer" onclick="exportPPT()">
+                            <div class="exportImage sprit-img exportPPTImage"></div>
+                            <div class="exportText">EXPORT PPT</div>
+                        </div>
+                        <div class="exportContainer exportHelpDocContainer" onclick="downloadDocs()">
+                            <div class="exportImage sprit-img exportHelpDoc"></div>
+                            <div class="exportText">HELP DOC</div>
+                        </div>
+                        <div class="logOutContainer" onclick="logOut('@Url.Action("Login", "Login")')">
+                            <div class="exportImage logOutImage"></div>
+                            <div class="exportText">LOG OUT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="home-div" onclick="RedirectToHome('@Url.Action("Home", "Home")')"></div>
+        </div>
+        <div class="header-sub-menu">
+            <div class="left-panel-Icon"><div class="showMenu"></div></div>
+            <div class="sub-menu-div">
+
+                <div class="sub-menu" id="FiveWProfileMenu"   onclick="RedirectToSubMenu(this, '@Url.Action("Index", "FiveWProfile")')">
+                    <div class="sub-menu-img InactiveFiveWProfileMenuImg"></div>
+                    <div class="sub-menu-text" id="FiveWProfileMenuText">5W PROFILE</div>
+                    <div class="sub-menu-arrow inactiveArrow"></div>
+                </div>
+                <div class="sub-menu" id="DrinkingMomentsMenu" onclick="RedirectToSubMenu(this, '@Url.Action("Index", "DrinkingMomentsDeepDive")')">
+                    <div class="sub-menu-img InactiveDrinkingMomentsMenuImg"></div>
+                    <div class="sub-menu-text" id="DrinkingMomentsMenuText">DRINKING MOMENTS DEEP DIVE</div>
+                    <div class="sub-menu-arrow inactiveArrow"></div>
+                </div>
+
+
+                <div class="sub-menu" id="BrandFitToolMenu" style="display:none" onclick="RedirectToSubMenu(this, '@Url.Action("Index", "BrandFitAnalysis")')">
+                    <div class="sub-menu-img InactiveBrandFitToolMenuImg"></div>
+                    <div class="sub-menu-text" id="BrandFitToolMenuText">BRAND FIT TOOL</div>
+                    <div class="sub-menu-arrow inactiveArrow"></div>
+                </div>
+
+                <div class="redirectIcon" style="display:none" onclick="RedirectToBrandFit('@Url.Action("Index", "BrandFitAnalysis", new {frmFW = "1"})')">BRAND FIT TOOL</div>
+
+            </div>
+          
+        </div>
+        <div class="selection-summary-Div igclk">
+            <div class="arrow_popup igclk">
+                <div class="arrw arrw_dwn igclk"></div>
+            </div>
+            <div class="filter-selection-container igclk">
+
+            </div>
+        </div>
+        <div class="export-div">
+            <div class="masterBody">
+                @RenderBody()
+                @*<hr />
+                    <footer></footer>*@
+            </div>
+            <div class="footer" style="display:none">
+                <div class="left-footer-div">
+                    <span>Source: CBL Study |</span>
+                    <div style="margin-left:5px;display:inline-block">Current Wave: </div>
+                    <span id="current-wave"></span>
+                    <div class="previous-wave" style="margin-left:5px;display:inline-block">Previous Wave: </div>
+                    <span id="previous-wave"></span>
+                </div>
+                @*<div class="middle-footer-div">
+                    <span id="middle-footer">Change Vs Previous Wave</span>
+                </div>*@
+                <div class="right-footer-div">
+                    <div class="sample-size-div" style="float:left">
+                        <span>LS indicates Low Sample(<30) </span>
+                        
+                    </div>
+                    <div class="index-div" style="float:right;">
+                        <div class="green-footer-icon"></div>
+                        <span>Index with Benchmark(>120)</span>
+                        <div class="red-footer-icon"></div>
+                        <span>Index with Benchmark(<80)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*loader*@
+    <div id="Translucent" class="TranslucentDiv" style="display: none;"></div>
+    <div id="Loader" style="display: none;">
+        <img src="~/Content/Images/loader.gif?12"  style="width:100px;height:100px;"/>       
+    </div>
+    <div class="alert-div" style="display:none">
+        <div class="alert-header">
+        <div class="alert-header-text">ALERT</div>
+        <div class="alert-close"></div></div>
+        <div class="alert-body">
+            <div class="alert-message"></div>
+            <div class="alert-ok">OK</div>
+        </div>
+    </div>
+    <div class="defaltdataloding">Default data is loading ....</div>
+    @*@Scripts.Render("~/bundles/jquery")*@
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
